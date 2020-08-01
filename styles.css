@@ -1,0 +1,214 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700);
+
+:root {
+	--body-color: black;
+	--contrast-color: white;
+	--link-color: #448fd4;	
+	--primary-color: #555555;  
+}
+
+* {
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;	
+}
+
+body {
+	background-color: #525659;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	color: var(--body-color);
+}
+
+header {
+	height: 20%;
+	margin: 0 0 15px 0;
+}
+
+header .name {
+	font-weight: 700;
+	font-size: 48px;
+	letter-spacing: 2px;
+	color: var(--primary-color);
+}
+
+header .headline {
+	font-weight: 400;
+	font-size: 22px;
+	margin-bottom: 3px;
+}
+
+h2 {
+	display: inline-block;
+	color: var(--primary-color);
+	padding-right: 25px;
+	background: var(--contrast-color);
+	font-size: 22px;
+	font-weight: 700;
+	position: relative;
+	top: -15px;
+}
+
+main {
+	height: 75%;
+}
+
+.container  {
+	padding: 45px;
+	background-color: var(--contrast-color);
+	position: relative;
+	top: 60px;
+	margin: 0 auto 8px;
+	height:100%;
+	width: 80%;
+	max-width: 795px;
+	-webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+
+}
+
+.section {
+	border-top: 1px solid #cccccc;
+	margin-bottom: 10px;
+}
+
+.contact__one, .contact__two{
+	display: flex;
+	font-size: 12px;
+}
+
+.contact__one div, .contact__two div{
+	margin: 3px 3px 0 0;
+}
+
+.contact__two {
+	margin-bottom: 8px;
+}
+
+.contact__two i {
+	margin: 0 5px 0 3px;
+}
+
+.link, .link a{
+	color: var(--link-color);
+	text-decoration: none;
+}
+
+.contact__one span {
+	color: #cccccc;
+	margin: 0 0 0 3px;
+}
+
+.job {
+	position: relative;
+	top: -12px;
+	margin-bottom: 10px;
+}
+
+.position {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.position span {
+	font-weight: 300;
+	color: var(--primary-color);
+}
+
+.rol, .company {
+	margin: 2px 0 1px 0;
+}	
+
+.description p {
+	margin: 6px 0;
+	font-size: 12px;
+}
+
+.column__two {
+	margin: 0 0 0 20px;
+	font-size: 13px;
+}
+
+.column__two p {
+	margin-bottom: 8px;
+}
+
+.column__two li {
+	margin-left: 25px;
+}
+
+.column__two li span {
+	position: relative;
+	left: -5px;
+}
+
+footer {
+	height: 5%;
+    background: #0397E7;
+    color: var(--contrast-color);
+    font-size: 13px;
+    margin: 18px 0 15px;
+    padding: 10px 0;
+    text-align: center;
+
+}
+
+footer span {
+	font-weight: 300;
+	font-size: 11px;
+	margin-right: 5px;
+}
+
+footer a {
+	color: #add8ff !important;
+}
+
+footer b {
+	color: white;
+}
+
+@media (max-width: 768px) {
+ 
+ header {
+    text-align: center;
+}
+
+header .name {
+	font-weight: 600;
+	font-size: 40px;
+}
+
+.container {
+	top: 0;
+	width: 100%;
+	padding: 20px;
+	margin: 0;
+}
+
+.wrapper{ 
+	display: block;
+}
+
+.column__two {
+	margin: 0 0 0 0; 
+}
+
+.contact__one, .contact__two {
+	align-content: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.contact__two:last-child {
+	margin: 0 0 36px 0;
+}
+
+
+}
